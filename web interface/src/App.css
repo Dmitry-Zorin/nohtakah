@@ -1,0 +1,6 @@
+.App {
+    background-color: #6D6F75;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}

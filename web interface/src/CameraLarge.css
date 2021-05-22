@@ -1,0 +1,24 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.Background {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.CameraLarge {
+    height: 90vh;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 3;
+    cursor: url('cursors/zoomIn.svg') 5 5, zoom-in;
+}
