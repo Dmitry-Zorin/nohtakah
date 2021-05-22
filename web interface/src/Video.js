@@ -1,23 +1,26 @@
 import {useState} from "react"
 
-import noCamera from './cursors/no_camera.png'
-const videoFeed = 'video_feed'
+import noCamera from './images/no_camera.png'
 
 const Video = () => {
-    const [src, setSrc] = useState(videoFeed)
+    const [display, setDisplay] = useState('block')
 
     return (
-        <img
-            src={src}
-            alt='No video feed'
-            height='100%'
-            style={{pointerEvents: 'none'}}
-            onError={() => {
-                if (src === videoFeed) {
-                    setSrc(noCamera)
-                }
-            }}
-        />
+        <>
+            <img
+                src='video_feed'
+                alt='No video feed'
+                height='100%'
+                style={{pointerEvents: 'none', display}}
+                onError={() => setDisplay('none')}
+            />
+            <img
+                src={noCamera}
+                alt='No video feed'
+                height='100%'
+                style={{pointerEvents: 'none'}}
+            />
+        </>
     )
 }
 

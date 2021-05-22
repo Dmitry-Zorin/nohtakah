@@ -3,8 +3,8 @@ import {useEffect, useRef, useState} from "react"
 import './Camera.css'
 import './CameraLarge.css'
 import GUI from "./GUI"
-import move from './cursors/move.svg'
-import zoomIn from './cursors/zoomIn.svg'
+import move from './images/move.svg'
+import zoomIn from './images/zoomIn.svg'
 
 const CameraLarge = ({children, index, cam, setActiveCam, video}) => {
     const [zoom, setZoom] = useState(100)

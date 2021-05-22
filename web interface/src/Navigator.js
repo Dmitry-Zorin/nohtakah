@@ -3,7 +3,7 @@ import CoordsContext from "./CoordsContext"
 import {numberOfCameras, numberOfPeople} from "./constants"
 
 let globCoords = [...Array(numberOfCameras).keys()].map(_ => (
-    [...Array(numberOfPeople).keys()].map(_ => ({x: 0.5, y: 0.5}))
+    [...Array(numberOfPeople).keys()].map(_ => ({x: 0.25 + 0.5 * Math.random(), y: 0.25 + 0.5 * Math.random()}))
 ))
 
 const getRandomCoord = (coord) => (

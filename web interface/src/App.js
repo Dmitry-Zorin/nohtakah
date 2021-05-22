@@ -9,7 +9,7 @@ import Navigator from "./Navigator"
 import {numberOfCameras} from "./constants"
 import Video from "./Video"
 import CameraObjects from "./CameraObjects"
-import noCamera from "./cursors/no_camera.png"
+import noCamera from "./images/no_camera.png"
 
 const theme = createMuiTheme({
     typography: {fontFamily: 'Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif'},
